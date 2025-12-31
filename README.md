@@ -1,2 +1,2 @@
-# ElectronicsWing_Embedded_Cpp
-ElectronicsWing Embedded Cpp
+# Embedded_Cpp
+Embedded Cpp Practise Code

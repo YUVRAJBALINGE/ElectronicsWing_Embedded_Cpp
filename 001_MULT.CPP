@@ -1,0 +1,23 @@
+/*
+WRITE C++ PROGRAM MULTIPLICATION OF THREE NUMBER
+
+
+*/
+
+
+#include<iostream.h>
+#include<conio.h>
+
+
+int main(){
+clrscr();
+int x,y,z;
+int m;
+
+cin>>x>>y>>z;
+
+m = x*y*z;
+cout << "Multplication of x,y,z="<<m;
+
+getch();
+}

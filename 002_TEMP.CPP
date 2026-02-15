@@ -1,0 +1,24 @@
+/*
+Temperature Conversion F temperature to Degree Temperature
+
+Input:   F
+Process: T (5.0/9.0)(f-32)
+Output:  T
+*/
+
+#include<iostream.h>
+#include<conio.h>
+
+void main(){
+clrscr();
+float F=0;
+float T=0;
+
+T = (F-32)/(5.0/9.0);
+
+cin>>F;
+
+cout<< "Temp=" <<T;
+
+getch();
+}

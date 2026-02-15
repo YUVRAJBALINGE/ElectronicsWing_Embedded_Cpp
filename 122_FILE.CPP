@@ -1,0 +1,24 @@
+/*
+ @brief  Write down a c++ program to display the content of file on screen
+ @param   file name: text file where is it location on location file
+ @retval  display the data on the screen
+*/
+
+#include<iostream.h>
+#include "conio.h"
+#include"fstream.h"
+
+void main(){
+clrscr();
+ifstream fin;
+fin.open("file1.txt");
+char x;
+
+while(!fin.eof()){
+x= fin.get();
+cout.put(x);
+}
+fin.close();
+
+getch();
+}

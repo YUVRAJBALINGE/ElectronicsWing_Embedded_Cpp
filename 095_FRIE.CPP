@@ -1,0 +1,73 @@
+//WRITE C++ PROGFRM TO FOR A FRIEND FUNCTION TO FIND THE MEAN OF X & Y USING FRIEND FUNCTION
+
+#include<iostream.h>
+#include<conio.h>
+
+class item;
+class item1
+{
+private:
+int x,y;
+
+public:
+void getData();
+friend void calMean(item1);
+friend void calMean1(item, item1);
+};
+void item1::getData()
+{
+cout << "Enter the value of x & y=";
+
+cin>>x>>y;
+}
+
+class item{
+
+private :
+ int x,y;
+ //float mean;
+
+public:
+void getData();
+friend void calMean(item);
+friend void calMean1(item,item1);
+void putData();
+
+};
+void item::getData(){
+   cout << "enter the Value of x & y=";
+   cin >> x>> y;
+}
+void item::putData(){
+
+//cout << "\nMean="<<mean;
+}
+
+void calMean(item p)
+{
+float sum;
+sum = (p.x+p.y)/2.0;
+cout << "Mean="<<sum;
+}
+
+void calMean1(item a, item1 b){
+float sum;
+sum = (a.x + a.y + b.x + b.y)/4.0;
+cout << "Mean=" <<sum;
+}
+
+void main()
+{
+clrscr();
+
+item t;
+t.getData();
+calMean(t);
+//t.putData();
+
+item1 t1;
+t1.getData();
+calMean1(t,t1);
+
+getch();
+}
